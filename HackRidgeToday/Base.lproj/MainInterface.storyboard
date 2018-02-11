@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="MHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="12" sectionFooterHeight="12" translatesAutoresizingMaskIntoConstraints="NO" id="oD9-KX-rQW">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Announcement Cell" id="1X1-cP-P24" customClass="AnnouncementCell" customModule="MHacks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="12" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1X1-cP-P24" id="phu-pM-cGR">
+                                            <frame key="frameInset" width="320" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-wK-KL5">
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdE-s5-uMg">
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-KR-ZVU">
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:41 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25y-pj-qig">
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgt-7b-id0">
+                                                    <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="2" id="PsE-lX-0sa"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tTI-KR-ZVU" firstAttribute="bottom" secondItem="Zgt-7b-id0" secondAttribute="bottom" id="5Qj-HV-OE3"/>
+                                                <constraint firstAttribute="trailing" secondItem="ncg-wK-KL5" secondAttribute="trailing" constant="15" id="Dd8-9e-7OD"/>
+                                                <constraint firstItem="ncg-wK-KL5" firstAttribute="leading" secondItem="Zgt-7b-id0" secondAttribute="trailing" constant="13" id="Vjv-uD-MlO"/>
+                                                <constraint firstItem="tTI-KR-ZVU" firstAttribute="top" secondItem="Zgt-7b-id0" secondAttribute="top" id="fDN-Iy-27e"/>
+                                                <constraint firstAttribute="bottom" secondItem="ncg-wK-KL5" secondAttribute="bottom" constant="5" id="iaR-n0-1n6"/>
+                                                <constraint firstItem="ncg-wK-KL5" firstAttribute="top" secondItem="phu-pM-cGR" secondAttribute="top" constant="5" id="qeA-X2-xtA"/>
+                                                <constraint firstItem="Zgt-7b-id0" firstAttribute="leading" secondItem="phu-pM-cGR" secondAttribute="leading" constant="10" id="qsw-aX-cpY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="colorView" destination="Zgt-7b-id0" id="3WL-x8-atb"/>
+                                            <outlet property="date" destination="25y-pj-qig" id="k0P-1l-Cmu"/>
+                                            <outlet property="title" destination="tTI-KR-ZVU" id="q1W-D8-aoT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oD9-KX-rQW" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="Ar5-tM-XyY"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="oD9-KX-rQW" secondAttribute="bottom" id="Oyj-g3-CqB"/>
+                            <constraint firstItem="oD9-KX-rQW" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="PWH-L8-Bdd"/>
+                            <constraint firstAttribute="trailing" secondItem="oD9-KX-rQW" secondAttribute="trailing" id="uRt-o0-9I8"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="274"/>
+                    <connections>
+                        <outlet property="tableView" destination="oD9-KX-rQW" id="iSC-NC-4qW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="284"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
