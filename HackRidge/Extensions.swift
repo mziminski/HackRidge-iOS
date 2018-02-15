@@ -17,11 +17,11 @@ extension String {
 		var formatted = ""
 		enumerateSubstrings(in: startIndex..<endIndex, options: NSString.EnumerationOptions.bySentences, { sentence, sentenceRange, enclosingRange, stop in
 			guard let sentence = sentence
-			else
+				else
 			{
 				return
 			}
-			formatted += sentence.replacingCharacters(in: self.startIndex..<self.index(self.startIndex, offsetBy: 1), with: sentence.substring(to: sentence.index(after: sentence.startIndex)).capitalized)
+			formatted += sentence.replacingCharacters(in: self.startIndex..<self.characters.index(self.startIndex, offsetBy: 1), with: sentence.substring(to: sentence.characters.index(after: sentence.startIndex)).capitalized)
 		})
 		// Add trailing full stop.
 		if (formatted[formatted.index(before: formatted.endIndex)] != ".")
@@ -62,9 +62,9 @@ struct MHacksColor
 	{
 		return UIColor(red: 241.0 / 255.0, green: 103.0 / 255.0, blue: 88.0 / 255.0, alpha: 1.0)
 	}
-	static var purple: UIColor
+	static var darkred: UIColor
 	{
-		return UIColor(red: 93.0 / 255.0, green: 62.0 / 255.0, blue: 110.0 / 255.0, alpha: 1.0)
+		return UIColor(red: 220.0 / 255.0, green: 61.0 / 255.0, blue: 61.0 / 255.0, alpha: 1.0)
 	}
 	static var plain: UIColor
 	{

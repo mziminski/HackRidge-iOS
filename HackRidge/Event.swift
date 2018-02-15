@@ -28,7 +28,7 @@ final class Event: SerializableElementWithIdentifier {
 			case .techTalk:
 				return MHacksColor.yellow
 			case .sponsor:
-				return MHacksColor.purple
+				return MHacksColor.darkred
 			case .other:
 				return MHacksColor.red
 			}

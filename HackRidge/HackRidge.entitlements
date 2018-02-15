@@ -6,11 +6,12 @@
 	<string>development</string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>webcredentials:HackRidge.io</string>
+		<string>webcredentials:mhacks.org</string>
+		<string>webcredentials:staging.mhacks.org</string>
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.CarolineZiminski.HackRidge</string>
+		<string>group.com.CarolineZiminski.HackRidge</string>
 	</array>
 </dict>
 </plist>
