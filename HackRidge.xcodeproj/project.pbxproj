@@ -11,6 +11,9 @@
 		278CEAB61E75CCF400F95833 /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CEAB51E75CCF400F95833 /* MapOverlay.swift */; };
 		278CEAB81E75CEAC00F95833 /* ImageOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CEAB71E75CEAC00F95833 /* ImageOverlayRenderer.swift */; };
 		2796A9731E73798C00B5141E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796A9721E73798C00B5141E /* MapViewController.swift */; };
+		37736C700D7A69BDA537C6E0 /* Pods_HackRidgeWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB2A05C2037454067A11CC0 /* Pods_HackRidgeWatch.framework */; };
+		3D66AFB1DC654BEE002DF9BF /* Pods_HackRidgeWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45C729914400E14F945E137 /* Pods_HackRidgeWatch_Extension.framework */; };
+		3E20233AD888D5C351C8601B /* Pods_HackRidge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E9FB676BC6707FF6CEAA51 /* Pods_HackRidge.framework */; };
 		460D41DB1D8B8B0A00C28048 /* GradientTintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D41DA1D8B8B0A00C28048 /* GradientTintView.swift */; };
 		463165381D86023D00371D56 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463165371D86023D00371D56 /* UserViewController.swift */; };
 		463A90731D9769B600C0F6FE /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A90721D9769B600C0F6FE /* ScannerView.swift */; };
@@ -111,6 +114,8 @@
 		82E2F3E81CD9590300A8F165 /* CoalescedCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E2F3E61CD9590300A8F165 /* CoalescedCallbacks.swift */; };
 		82EFDE8B1C32ED060074AB99 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EFDE8A1C32ED060074AB99 /* EventViewController.swift */; };
 		9D4D0CCC1C65AE5D003DAAF3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D0CCB1C65AE5D003DAAF3 /* SettingsViewController.swift */; };
+		A3EA5A8335E333A6D2D7B8C1 /* Pods_HackRidgeToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411030A013F718280E0C9392 /* Pods_HackRidgeToday.framework */; };
+		E07AC0E0801DE56B0A7BB53E /* Pods_HackRidgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C6A8DC4C82073CEBFE0ECB /* Pods_HackRidgeUITests.framework */; };
 		FE87AA241D8CD7C000C8DB64 /* BuildingMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE87AA231D8CD7C000C8DB64 /* BuildingMapsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -182,10 +187,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B6471994822D868FBAC7FAE /* Pods-HackRidgeWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch.release.xcconfig"; sourceTree = "<group>"; };
+		18DC3C0D7544E79788EDD343 /* Pods-HackRidgeWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		2780FAD61E7A22D900C2A6FD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		278CEAB51E75CCF400F95833 /* MapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
 		278CEAB71E75CEAC00F95833 /* ImageOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOverlayRenderer.swift; sourceTree = "<group>"; };
 		2796A9721E73798C00B5141E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2DE9DAC0684C77B74897C916 /* Pods-HackRidgeWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		2F3A8A7A0F3D886E8CC98332 /* Pods-HackRidgeToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday.release.xcconfig"; sourceTree = "<group>"; };
+		3AB2A05C2037454067A11CC0 /* Pods_HackRidgeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		411030A013F718280E0C9392 /* Pods_HackRidgeToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460D41DA1D8B8B0A00C28048 /* GradientTintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTintView.swift; sourceTree = "<group>"; };
 		463165371D86023D00371D56 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		463A90721D9769B600C0F6FE /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
@@ -202,6 +213,8 @@
 		46F3AEA01CD88EEC002495B2 /* ScheduleNowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleNowLabel.swift; sourceTree = "<group>"; };
 		46F716EB1DA23D6B008D473F /* FloorDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloorDescription.xib; sourceTree = "<group>"; };
 		4FB2B0FC2038A7C900626264 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		62C6A8DC4C82073CEBFE0ECB /* Pods_HackRidgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E9FB676BC6707FF6CEAA51 /* Pods_HackRidge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70065A541F54A3220058592C /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		703700EC1E7B192B0054DB5C /* IndoorFloorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorFloorCell.swift; sourceTree = "<group>"; };
 		704991681D9A062600C3E1AC /* ComposeAnnouncementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeAnnouncementTableViewController.swift; sourceTree = "<group>"; };
@@ -270,15 +283,31 @@
 		82942BAF1C2A38E30084880C /* ScheduleHourSeparator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleHourSeparator.xib; sourceTree = "<group>"; };
 		82E2F3E61CD9590300A8F165 /* CoalescedCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoalescedCallbacks.swift; sourceTree = "<group>"; };
 		82EFDE8A1C32ED060074AB99 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
+		9799733FE31EB72C9CCE9D4B /* Pods-HackRidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge.debug.xcconfig"; sourceTree = "<group>"; };
 		9D4D0CCB1C65AE5D003DAAF3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
+		A49238E3F0733946FBE83743 /* Pods-HackRidgeWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A9A7D1874569485C38CB2D /* Pods-HackRidge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidge.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge.release.xcconfig"; sourceTree = "<group>"; };
+		BEB2118CA943FB21B484BFDC /* Pods-HackRidgeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFD0C7AEEA7F7C4609C5090D /* Pods-HackRidgeToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday.debug.xcconfig"; sourceTree = "<group>"; };
+		E45C729914400E14F945E137 /* Pods_HackRidgeWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F199C47912F70037FEE4B346 /* Pods-HackRidgeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE87AA231D8CD7C000C8DB64 /* BuildingMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingMapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0300EFD18ECD5C49585E1B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37736C700D7A69BDA537C6E0 /* Pods_HackRidgeWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		709AEA321F6B19F000E7089C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07AC0E0801DE56B0A7BB53E /* Pods_HackRidgeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82287A461C66C3D8001A0F38 /* NotificationCenter.framework in Frameworks */,
+				A3EA5A8335E333A6D2D7B8C1 /* Pods_HackRidgeToday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D66AFB1DC654BEE002DF9BF /* Pods_HackRidgeWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +333,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				2780FAD71E7A22D900C2A6FD /* MapKit.framework in Frameworks */,
+				3E20233AD888D5C351C8601B /* Pods_HackRidge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C373ACE51FC01746389DB04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9799733FE31EB72C9CCE9D4B /* Pods-HackRidge.debug.xcconfig */,
+				A7A9A7D1874569485C38CB2D /* Pods-HackRidge.release.xcconfig */,
+				CFD0C7AEEA7F7C4609C5090D /* Pods-HackRidgeToday.debug.xcconfig */,
+				2F3A8A7A0F3D886E8CC98332 /* Pods-HackRidgeToday.release.xcconfig */,
+				BEB2118CA943FB21B484BFDC /* Pods-HackRidgeUITests.debug.xcconfig */,
+				F199C47912F70037FEE4B346 /* Pods-HackRidgeUITests.release.xcconfig */,
+				A49238E3F0733946FBE83743 /* Pods-HackRidgeWatch.debug.xcconfig */,
+				0B6471994822D868FBAC7FAE /* Pods-HackRidgeWatch.release.xcconfig */,
+				18DC3C0D7544E79788EDD343 /* Pods-HackRidgeWatch Extension.debug.xcconfig */,
+				2DE9DAC0684C77B74897C916 /* Pods-HackRidgeWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		709AEA361F6B19F000E7089C /* HackRidgeUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +371,11 @@
 			children = (
 				2780FAD61E7A22D900C2A6FD /* MapKit.framework */,
 				82287A451C66C3D8001A0F38 /* NotificationCenter.framework */,
+				67E9FB676BC6707FF6CEAA51 /* Pods_HackRidge.framework */,
+				411030A013F718280E0C9392 /* Pods_HackRidgeToday.framework */,
+				62C6A8DC4C82073CEBFE0ECB /* Pods_HackRidgeUITests.framework */,
+				3AB2A05C2037454067A11CC0 /* Pods_HackRidgeWatch.framework */,
+				E45C729914400E14F945E137 /* Pods_HackRidgeWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,6 +435,7 @@
 				709AEA361F6B19F000E7089C /* HackRidgeUITests */,
 				820C5BF51C29326900CD9F09 /* Frameworks */,
 				82473FA31C1F7A170061FFFB /* Products */,
+				1C373ACE51FC01746389DB04 /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -533,9 +588,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 709AEA3C1F6B19F000E7089C /* Build configuration list for PBXNativeTarget "HackRidgeUITests" */;
 			buildPhases = (
+				21ACEE185A56FE172FDEBDBC /* [CP] Check Pods Manifest.lock */,
 				709AEA311F6B19F000E7089C /* Sources */,
 				709AEA321F6B19F000E7089C /* Frameworks */,
 				709AEA331F6B19F000E7089C /* Resources */,
+				E9B7DA23D6E819C2207F5C89 /* [CP] Embed Pods Frameworks */,
+				6DD4DC60FBDAB14C1627EA60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -551,9 +609,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82287A531C66C3D8001A0F38 /* Build configuration list for PBXNativeTarget "HackRidgeToday" */;
 			buildPhases = (
+				E3B330B107A2CBC0B6922060 /* [CP] Check Pods Manifest.lock */,
 				82287A401C66C3D8001A0F38 /* Sources */,
 				82287A411C66C3D8001A0F38 /* Frameworks */,
 				82287A421C66C3D8001A0F38 /* Resources */,
+				08E9579D0BC9C283B84B98AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -568,8 +628,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8243F6991DA35EF400B9D929 /* Build configuration list for PBXNativeTarget "HackRidgeWatch" */;
 			buildPhases = (
+				9ACA701373BA73616BEA93F6 /* [CP] Check Pods Manifest.lock */,
 				8243F6701DA35EF400B9D929 /* Resources */,
 				8243F6981DA35EF400B9D929 /* Embed App Extensions */,
+				0300EFD18ECD5C49585E1B96 /* Frameworks */,
+				B09DB67BECE3E5EAC7AFB966 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -585,9 +648,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8243F6971DA35EF400B9D929 /* Build configuration list for PBXNativeTarget "HackRidgeWatch Extension" */;
 			buildPhases = (
+				EE11DE54440B7A6E128E8ACE /* [CP] Check Pods Manifest.lock */,
 				8243F67A1DA35EF400B9D929 /* Sources */,
 				8243F67B1DA35EF400B9D929 /* Frameworks */,
 				8243F67C1DA35EF400B9D929 /* Resources */,
+				B4423EB0DF0739D348B95FFA /* [CP] Embed Pods Frameworks */,
+				7830E6A92C1D604C3B297130 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -602,11 +668,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82473FB61C1F7A170061FFFB /* Build configuration list for PBXNativeTarget "HackRidge" */;
 			buildPhases = (
+				04D817551E570613AFC2A21D /* [CP] Check Pods Manifest.lock */,
 				82473F9E1C1F7A170061FFFB /* Sources */,
 				82473F9F1C1F7A170061FFFB /* Frameworks */,
 				82473FA01C1F7A170061FFFB /* Resources */,
 				82287A541C66C3D8001A0F38 /* Embed App Extensions */,
 				8243F69A1DA35EF400B9D929 /* Embed Watch Content */,
+				DFFF994C7AAC3686ABD27035 /* [CP] Embed Pods Frameworks */,
+				C3F0D90D3E70BD3ED4684F7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -761,6 +830,231 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D817551E570613AFC2A21D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRidge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08E9579D0BC9C283B84B98AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21ACEE185A56FE172FDEBDBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRidgeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DD4DC60FBDAB14C1627EA60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7830E6A92C1D604C3B297130 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ACA701373BA73616BEA93F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRidgeWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09DB67BECE3E5EAC7AFB966 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4423EB0DF0739D348B95FFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F0D90D3E70BD3ED4684F7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFFF994C7AAC3686ABD27035 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B330B107A2CBC0B6922060 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRidgeToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B7DA23D6E819C2207F5C89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE11DE54440B7A6E128E8ACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRidgeWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		709AEA311F6B19F000E7089C /* Sources */ = {
@@ -933,6 +1227,7 @@
 /* Begin XCBuildConfiguration section */
 		709AEA3D1F6B19F000E7089C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB2118CA943FB21B484BFDC /* Pods-HackRidgeUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -951,6 +1246,7 @@
 		};
 		709AEA3E1F6B19F000E7089C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F199C47912F70037FEE4B346 /* Pods-HackRidgeUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -968,6 +1264,7 @@
 		};
 		82287A511C66C3D8001A0F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD0C7AEEA7F7C4609C5090D /* Pods-HackRidgeToday.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HackRidgeToday/HackRidgeToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -988,6 +1285,7 @@
 		};
 		82287A521C66C3D8001A0F38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3A8A7A0F3D886E8CC98332 /* Pods-HackRidgeToday.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HackRidgeToday/HackRidgeToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1008,6 +1306,7 @@
 		};
 		8243F6931DA35EF400B9D929 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A49238E3F0733946FBE83743 /* Pods-HackRidgeWatch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1033,6 +1332,7 @@
 		};
 		8243F6941DA35EF400B9D929 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6471994822D868FBAC7FAE /* Pods-HackRidgeWatch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1057,6 +1357,7 @@
 		};
 		8243F6951DA35EF400B9D929 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DC3C0D7544E79788EDD343 /* Pods-HackRidgeWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1079,6 +1380,7 @@
 		};
 		8243F6961DA35EF400B9D929 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE9DAC0684C77B74897C916 /* Pods-HackRidgeWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1202,6 +1504,7 @@
 		};
 		82473FB71C1F7A170061FFFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9799733FE31EB72C9CCE9D4B /* Pods-HackRidge.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1230,6 +1533,7 @@
 		};
 		82473FB81C1F7A170061FFFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A9A7D1874569485C38CB2D /* Pods-HackRidge.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
