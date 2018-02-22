@@ -771,7 +771,12 @@ final private class APIManagerSerializer: NSObject, NSCoding {
 	private static let scanEventsKey = "scan_events"
 	
 	init?(coder aDecoder: NSCoder) {
-		guard let configuration = aDecoder.decodeObject(forKey: APIManagerSerializer.configurationKey) as? NSDictionary, let announcements = aDecoder.decodeObject(forKey: APIManagerSerializer.announcementsKey) as? NSDictionary, let locations = aDecoder.decodeObject(forKey: APIManagerSerializer.locationsKey) as? NSDictionary, let events = aDecoder.decodeObject(forKey: APIManagerSerializer.eventsKey) as? NSDictionary, let floors = aDecoder.decodeObject(forKey: APIManagerSerializer.floorsKey) as? NSDictionary, let scanEvents = aDecoder.decodeObject(forKey: APIManagerSerializer.scanEventsKey) as? NSDictionary
+		guard let configuration = aDecoder.decodeObject(forKey: APIManagerSerializer.configurationKey) as? NSDictionary,
+			let announcements = aDecoder.decodeObject(forKey: APIManagerSerializer.announcementsKey) as? NSDictionary,
+			let locations = aDecoder.decodeObject(forKey: APIManagerSerializer.locationsKey) as? NSDictionary,
+			let events = aDecoder.decodeObject(forKey: APIManagerSerializer.eventsKey) as? NSDictionary,
+			let floors = aDecoder.decodeObject(forKey: APIManagerSerializer.floorsKey) as? NSDictionary,
+			let scanEvents = aDecoder.decodeObject(forKey: APIManagerSerializer.scanEventsKey) as? NSDictionary
 			else { return nil }
 		
 		self.authenticator = aDecoder.decodeObject(forKey: APIManagerSerializer.authenticatorKey) as? NSDictionary ?? NSDictionary()

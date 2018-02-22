@@ -121,8 +121,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
 			showEventWithID(eventID)
 		}
 		
-		
-		
 		return true
 	}
 	

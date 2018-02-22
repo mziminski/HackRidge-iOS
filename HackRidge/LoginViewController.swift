@@ -46,7 +46,7 @@ final class LoginViewController: UIViewController, UITableViewDataSource, UITabl
 		
 		// Bar button items
 		
-		navigationItem.title = "MHacks"
+		navigationItem.title = "Hack Ridge"
 		navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
 		navigationItem.rightBarButtonItem = signInBarButtonItem
 		

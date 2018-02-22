@@ -6,6 +6,7 @@
     <dependencies>
         <deployment version="4112" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -257,8 +258,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-2n-g8a">
-                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-2n-g8a">
+                                            <rect key="frame" x="15" y="41.333333333333336" width="2" height="0.6666666666666643"/>
                                             <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="2" id="Kfn-Ee-OfF"/>
@@ -527,12 +528,15 @@
         <!--Announcement-->
         <scene sceneID="rdL-6x-glM">
             <objects>
-                <navigationController toolbarHidden="NO" id="ODI-Mf-0FL" sceneMemberID="viewController">
+                <navigationController id="ODI-Mf-0FL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Announcement" image="News" selectedImage="News Selected" id="rZV-ev-d7s"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJR-ji-OoQ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EZp-mN-Jw6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="NV6-fG-79i" kind="relationship" relationship="rootViewController" id="lhJ-16-bVz"/>
                     </connections>
@@ -640,7 +644,7 @@
         <!--Event-->
         <scene sceneID="gvr-tM-SkY">
             <objects>
-                <viewController storyboardIdentifier="EventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U8L-qO-xrm" customClass="EventViewController" customModule="MHacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U8L-qO-xrm" customClass="EventViewController" customModule="HackRidge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sED-B5-Wfk"/>
                         <viewControllerLayoutGuide type="bottom" id="mgp-QZ-BpL"/>
@@ -675,7 +679,7 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-76-5x0" customClass="CircleView" customModule="MHacks" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-76-5x0" customClass="CircleView" customModule="HackRidge" customModuleProvider="target">
                                                         <rect key="frame" x="323" y="0.0" width="22" height="22"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
