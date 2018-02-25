@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class CountdownViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class CountdownViewController: UIViewController {
 	
 	// Delays the initial filling animation by second
 	var firstAppearanceDate: Date?
+	var configuration = Configuration()
 	
 	// MARK: - Lifecycle
 	
@@ -27,13 +29,13 @@ class CountdownViewController: UIViewController {
 		//progressIndicator.progressColor = UIColor.clear
 		
 		countdownLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 120.0, weight: UIFontWeightThin)
-		APIManager.shared.updateConfiguration()
+		observeConfigeration()
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		NotificationCenter.default.addObserver(self, selector: #selector(CountdownViewController.updateCountdownViews(_:)), name: APIManager.ConfigurationUpdatedNotification, object: nil)
-		APIManager.shared.updateConfiguration()
+		observeConfigeration()
 		
 		if firstAppearanceDate == nil {
 			firstAppearanceDate = Date()
@@ -83,15 +85,29 @@ class CountdownViewController: UIViewController {
 		}
 	}
 	
+	func observeConfigeration() {
+		let dbRef = Database.database().reference()
+		
+		dbRef.child("configeration").observe(.value, with: { (snapshot) in
+			if let childsnapshot = snapshot.value as? [String:Any] {
+				print(childsnapshot)
+				_ = self.configuration.updateWith(childsnapshot)
+				print("start",self.configuration.startDate,"end",self.configuration.endDate)
+			}
+		}) { (errorMessage) in
+			NotificationCenter.default.post(name: APIManager.FailureNotification, object: errorMessage)
+		}
+	}
+	
 	func updateCountdownViews() {
 
 		if let firstAppearanceDate = firstAppearanceDate , firstAppearanceDate.timeIntervalSinceNow < -0.5 {
-			progressIndicator.setProgress(APIManager.shared.configuration.progress(), animated: true)
+			progressIndicator.setProgress(configuration.progress(), animated: true)
 		}
 		
-		countdownLabel.text = APIManager.shared.configuration.timeRemainingDescription
-		startLabel.text = APIManager.shared.configuration.startDateDescription
-		endLabel.text = APIManager.shared.configuration.endDateDescription
+		countdownLabel.text = configuration.timeRemainingDescription
+		startLabel.text = configuration.startDateDescription
+		endLabel.text = configuration.endDateDescription
 	}
 }
 

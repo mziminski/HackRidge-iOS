@@ -7,17 +7,35 @@
 //
 
 import UIKit
+import  FirebaseDatabase
 
 class AnnouncementsViewController: UITableViewController {
+	
+	var announcements = [Announcement]()
 	
     // MARK: Model
 	
 	fileprivate func fetch(completionBlock: (() -> Void)? = nil) {
-		APIManager.shared.updateAnnouncements { _ in
+		announcements.removeAll()
+		
+		let dbRef = Database.database().reference()
+		
+		dbRef.child("announcements").observe(.value, with: { (snapshot) in
 			DispatchQueue.main.async(execute: {
+				for child in snapshot.children {
+					if let childSnapshot = child as? DataSnapshot,
+						let dict = childSnapshot.value as? [String:Any]	{
+						let obj = Announcement(dict)!
+						if !self.announcements.contains(obj){
+							self.announcements.append(obj)
+						}
+					}
+				}
+				self.tableView.reloadData()
 				completionBlock?()
 			})
-		}
+			print("Fetched Announcements")
+		})
 	}
 	
     // MARK: ViewController Lifecycle
@@ -35,23 +53,13 @@ class AnnouncementsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 		
-        if APIManager.shared.canPostAnnouncements {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(AnnouncementsViewController.compose(_:)))
-        }
-        else {
-            navigationItem.rightBarButtonItem = nil
-        }
+        navigationItem.rightBarButtonItem = nil
 		
 		NotificationCenter.default.addObserver(self, selector: #selector(AnnouncementsViewController.announcementsUpdated(_:)), name: APIManager.AnnouncementsUpdatedNotification, object: nil)
 		
-		if APIManager.shared.canEditAnnouncements {
-			tableView.allowsSelection = true
-			tableView.allowsMultipleSelection = false
-		}
-		else {
-			tableView.allowsSelection = false
-			tableView.allowsMultipleSelection = false
-		}
+		tableView.allowsSelection = false
+		tableView.allowsMultipleSelection = false
+		
 		if let indexPath = tableView.indexPathForSelectedRow
 		{
 			transitionCoordinator?.animate(alongsideTransition: { context in
@@ -62,7 +70,6 @@ class AnnouncementsViewController: UITableViewController {
 					}
 			})
 		}
-		
 		fetch()
     }
 	
@@ -89,79 +96,29 @@ class AnnouncementsViewController: UITableViewController {
 		})
 	}
 	
-	func compose(_ sender: UIBarButtonItem) {
-		guard APIManager.shared.canPostAnnouncements
-		else {
-			navigationItem.rightBarButtonItem = nil
-			return
-		}
-		let compose = storyboard!.instantiateViewController(withIdentifier: "ComposeAnnouncementNavigationController") as! UINavigationController
-		present(compose, animated: true, completion: nil)
+    // MARK: Table View Data
+	override func numberOfSections(in tableView: UITableView) -> Int {
+		return 1
 	}
 	
-    // MARK: Table View Data
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return APIManager.shared.announcements.count
+        return self.announcements.count
     }
 	
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Announcement Cell", for: indexPath) as! AnnouncementCell
-        let announcement = APIManager.shared.announcements[(indexPath as NSIndexPath).row]
+        let announcement = announcements[(indexPath as NSIndexPath).row]
 
 		cell.selectionStyle = .none
         cell.title.text = announcement.title
         cell.date.text = announcement.localizedDate
         cell.message.text = announcement.message
-		
+
 		cell.colorView.backgroundColor = announcement.category.color
 
 		cell.sponsored.isHidden = !announcement.isSponsored
 		cell.unapproved.isHidden = !announcement.approved && APIManager.shared.canEditAnnouncements ? false : true
 
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return APIManager.shared.canEditAnnouncements
-    }
-    
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-		let edit = UITableViewRowAction(style: .default, title: "Edit") { action, index in
-			let compose = self.storyboard!.instantiateViewController(withIdentifier: "ComposeAnnouncementNavigationController") as! UINavigationController
-			(compose.topViewController as? ComposeAnnouncementTableViewController)?.editingAnnouncement = APIManager.shared.announcements[indexPath.row]
-			self.present(compose, animated: true, completion: nil)
-		}
-		
-		edit.backgroundColor = MHacksColor.plain
-		
-        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { action, index in
-            let confirm = UIAlertController(title: "Announcement Deletion", message: "This announcement will be deleted from the approval list for all MHacks organizers.", preferredStyle: .alert)
-            confirm.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-            confirm.addAction(UIAlertAction(title: "Confirm", style: .default, handler: {(action: UIAlertAction!) in
-				APIManager.shared.deleteAnnouncement(APIManager.shared.announcements[indexPath.row])
-			}))
-			
-            self.present(confirm, animated: true, completion: nil)
-        }
-		
-		if !APIManager.shared.announcements[indexPath.row].approved {
-			let approve = UITableViewRowAction(style: .default, title: "Approve", handler: { action, index in
-				let confirm = UIAlertController(title: "Announcement Approval", message: "This announcement will be added to the approval list", preferredStyle: .alert)
-				confirm.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-				confirm.addAction(UIAlertAction(title: "Confirm", style: .default, handler: {(action: UIAlertAction!) in
-					var approvedAnnouncement = APIManager.shared.announcements[indexPath.row]
-					approvedAnnouncement.approved = true
-					APIManager.shared.updateAnnouncement(approvedAnnouncement, usingMethod: .put)
-				}))
-				
-				self.present(confirm, animated: true, completion: nil)
-			})
-			
-			approve.backgroundColor = UIColor(red: 27.0 / 255, green: 188.0 / 255.0, blue: 155.0 / 255.0, alpha: 1.0)
-			
-			return [approve, delete, edit]
-		}
-        
-        return [delete, edit]
     }
 }

@@ -104,6 +104,8 @@ struct Announcement: SerializableElementWithIdentifier {
 		return formatter.string(from: date)
 	}
 	
+	
+	
 	var localizedDate: String {
 		return Announcement.localizedDate(for: date)
 	}
@@ -118,13 +120,14 @@ extension Announcement
 	private static let approvedKey = "isApproved"
 
 	init?(_ serializedRepresentation: SerializedRepresentation) {
+		
 		guard
-			let id = serializedRepresentation[Announcement.idKey] as? String,
-			let title = serializedRepresentation[Announcement.titleKey] as? String,
-			let message = serializedRepresentation[Announcement.infoKey] as? String,
-			let date = serializedRepresentation[Announcement.dateKey] as? Double,
-			let categoryString = serializedRepresentation[Announcement.categoryKey] as? String,
-			let approved = serializedRepresentation[Announcement.approvedKey] as? Bool
+			let id = serializedRepresentation[Announcement.idKey]! as? String,
+			let title = serializedRepresentation[Announcement.titleKey]! as? String,
+			let message = serializedRepresentation[Announcement.infoKey]! as? String,
+			let date = Announcement.convertDateToDouble(for: String(describing: serializedRepresentation[Announcement.infoKey]!)) as? Double,
+			let categoryString = serializedRepresentation[Announcement.categoryKey]! as? String,
+			let approved = serializedRepresentation[Announcement.approvedKey]! as? Bool
 			else {
 				return nil
 		}
@@ -192,4 +195,26 @@ extension Announcement
 func <(lhs: Announcement, rhs: Announcement) -> Bool {
 	return lhs.date > rhs.date
 }
+
+extension Announcement {
+	static func convertDateToDouble(for dateInStringFormat: String) -> Double {
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.000"
+		
+		let strDate = "2018-01-02T06:00:00.000Z".replacingOccurrences(of: "T", with: " ").replacingOccurrences(of: "Z", with: "")
+		
+		guard let date = dateFormatter.date(from: strDate) else {
+			fatalError("ERROR: Date conversion failed due to mismatched format.")
+		}
+		
+		// convert Date to TimeInterval (typealias for Double)
+		let timeInterval = date.timeIntervalSince1970
+		
+		// convert to Integer
+		let myDouble = Double(timeInterval)
+		
+		return myDouble
+	}
+}
+
 

@@ -11,9 +11,7 @@
 		278CEAB61E75CCF400F95833 /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CEAB51E75CCF400F95833 /* MapOverlay.swift */; };
 		278CEAB81E75CEAC00F95833 /* ImageOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CEAB71E75CEAC00F95833 /* ImageOverlayRenderer.swift */; };
 		2796A9731E73798C00B5141E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2796A9721E73798C00B5141E /* MapViewController.swift */; };
-		37736C700D7A69BDA537C6E0 /* Pods_HackRidgeWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB2A05C2037454067A11CC0 /* Pods_HackRidgeWatch.framework */; };
-		3D66AFB1DC654BEE002DF9BF /* Pods_HackRidgeWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45C729914400E14F945E137 /* Pods_HackRidgeWatch_Extension.framework */; };
-		3E20233AD888D5C351C8601B /* Pods_HackRidge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E9FB676BC6707FF6CEAA51 /* Pods_HackRidge.framework */; };
+		381BC50A2F7108B981B2152F /* Pods_HackRidgeToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DAF7720611E9A1AFF912 /* Pods_HackRidgeToday.framework */; };
 		460D41DB1D8B8B0A00C28048 /* GradientTintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460D41DA1D8B8B0A00C28048 /* GradientTintView.swift */; };
 		463165381D86023D00371D56 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463165371D86023D00371D56 /* UserViewController.swift */; };
 		463A90731D9769B600C0F6FE /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A90721D9769B600C0F6FE /* ScannerView.swift */; };
@@ -29,10 +27,17 @@
 		46F3AE9F1CD88E06002495B2 /* ScheduleNowLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F3AE9E1CD88E06002495B2 /* ScheduleNowLabel.xib */; };
 		46F3AEA11CD88EEC002495B2 /* ScheduleNowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3AEA01CD88EEC002495B2 /* ScheduleNowLabel.swift */; };
 		46F716EC1DA23D6B008D473F /* FloorDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F716EB1DA23D6B008D473F /* FloorDescription.xib */; };
+		4CD58B58E1EF5813074EAF0F /* Pods_HackRidge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0396631BB748235FE66A2AE9 /* Pods_HackRidge.framework */; };
+		4F05C434203FC6EC00102864 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F05C433203FC6EC00102864 /* GoogleService-Info.plist */; };
+		4F0672EF2041589700C07963 /* Pods_HackRidgeToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DAF7720611E9A1AFF912 /* Pods_HackRidgeToday.framework */; };
+		4F0672F520415A3300C07963 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0672F420415A3200C07963 /* APIManager.swift */; };
+		4F0672FE20416FF500C07963 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0672F420415A3200C07963 /* APIManager.swift */; };
+		4F26ACA1203FB21A009012DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F26ACA0203FB21A009012DE /* GoogleService-Info.plist */; };
 		4FB2B0FD2038A7C900626264 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB2B0FC2038A7C900626264 /* Launch Screen.storyboard */; };
+		64566AB1DF85C81C126C3B03 /* Pods_HackRidgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0672EC2041589700C07963 /* Pods_HackRidgeUITests.framework */; };
+		67D1DB1A8B846BC99E9976F6 /* Pods_HackRidgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75765311B753EB8A4E7863F9 /* Pods_HackRidgeUITests.framework */; };
 		70065A551F54A3220058592C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70065A541F54A3220058592C /* Configuration.swift */; };
 		70065A561F54A5A70058592C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70065A541F54A3220058592C /* Configuration.swift */; };
-		70065A571F54A5A80058592C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70065A541F54A3220058592C /* Configuration.swift */; };
 		703700ED1E7B192B0054DB5C /* IndoorFloorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703700EC1E7B192B0054DB5C /* IndoorFloorCell.swift */; };
 		704991691D9A062600C3E1AC /* ComposeAnnouncementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704991681D9A062600C3E1AC /* ComposeAnnouncementTableViewController.swift */; };
 		7049916B1D9A067700C3E1AC /* SinglelineInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7049916A1D9A067700C3E1AC /* SinglelineInputTableViewCell.swift */; };
@@ -52,33 +57,11 @@
 		82287A601C66C570001A0F38 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82942B9A1C2A2B850084880C /* Location.swift */; };
 		82287A611C66C570001A0F38 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82942B9E1C2A2EAE0084880C /* Event.swift */; };
 		82287A631C66C59A001A0F38 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FC81C1F8C5B0061FFFB /* AnnouncementCell.swift */; };
-		82287A6F1C66D806001A0F38 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FCC1C1F91D70061FFFB /* APIManager.swift */; };
 		82287A751C66D8F7001A0F38 /* APIManager+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82287A6C1C66D575001A0F38 /* APIManager+UIKit.swift */; };
 		822896971D9E4B380081A613 /* HackRidge.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 82287A441C66C3D8001A0F38 /* HackRidge.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		823994DD1D9273AC00A8D90C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823994DC1D9273AC00A8D90C /* KeychainWrapper.swift */; };
 		823E4D331C615EE400F37D0B /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E4D321C615EE400F37D0B /* TextViewCell.swift */; };
 		8240DE641D9C72EA000DD78C /* ScannedDataField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240DE631D9C72EA000DD78C /* ScannedDataField.swift */; };
-		8243F6761DA35EF400B9D929 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8243F6741DA35EF400B9D929 /* Interface.storyboard */; };
-		8243F6781DA35EF400B9D929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8243F6771DA35EF400B9D929 /* Assets.xcassets */; };
-		8243F67F1DA35EF400B9D929 /* HackRidgeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8243F67E1DA35EF400B9D929 /* HackRidgeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8243F6861DA35EF400B9D929 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243F6851DA35EF400B9D929 /* InterfaceController.swift */; };
-		8243F6881DA35EF400B9D929 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243F6871DA35EF400B9D929 /* ExtensionDelegate.swift */; };
-		8243F68A1DA35EF400B9D929 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243F6891DA35EF400B9D929 /* NotificationController.swift */; };
-		8243F68C1DA35EF400B9D929 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243F68B1DA35EF400B9D929 /* ComplicationController.swift */; };
-		8243F68E1DA35EF400B9D929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8243F68D1DA35EF400B9D929 /* Assets.xcassets */; };
-		8243F6921DA35EF400B9D929 /* HackRidge.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8243F6721DA35EF400B9D929 /* HackRidge.app */; };
-		8243F69B1DA3648C00B9D929 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FCC1C1F91D70061FFFB /* APIManager.swift */; };
-		8243F69C1DA365A900B9D929 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FBF1C1F80EA0061FFFB /* Serializable.swift */; };
-		8243F69D1DA365A900B9D929 /* MHacksArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82905E7E1D7CAB0E00744820 /* MHacksArray.swift */; };
-		8243F69E1DA365A900B9D929 /* CoalescedCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E2F3E61CD9590300A8F165 /* CoalescedCallbacks.swift */; };
-		8243F69F1DA365A900B9D929 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823994DC1D9273AC00A8D90C /* KeychainWrapper.swift */; };
-		8243F6A91DA365B300B9D929 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FC61C1F8B0F0061FFFB /* Announcement.swift */; };
-		8243F6AA1DA365B300B9D929 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82942B9A1C2A2B850084880C /* Location.swift */; };
-		8243F6AB1DA365B300B9D929 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82942B9E1C2A2EAE0084880C /* Event.swift */; };
-		8243F6AC1DA365B300B9D929 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205251F1D9DADDD00EF535C /* Floor.swift */; };
-		8243F6AD1DA365B300B9D929 /* ScanEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825FC34A1D90F1B400DDB9A5 /* ScanEvent.swift */; };
-		8243F6AE1DA365B300B9D929 /* ScannedDataField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240DE631D9C72EA000DD78C /* ScannedDataField.swift */; };
-		8243F6AF1DA369A600B9D929 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B8E651C2472EC007A2E88 /* Extensions.swift */; };
 		82473FA61C1F7A170061FFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FA51C1F7A170061FFFB /* AppDelegate.swift */; };
 		82473FA81C1F7A170061FFFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FA71C1F7A170061FFFB /* LoginViewController.swift */; };
 		82473FAA1C1F7A170061FFFB /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FA91C1F7A170061FFFB /* CountdownViewController.swift */; };
@@ -89,7 +72,6 @@
 		82473FC71C1F8B0F0061FFFB /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FC61C1F8B0F0061FFFB /* Announcement.swift */; };
 		82473FC91C1F8C5B0061FFFB /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FC81C1F8C5B0061FFFB /* AnnouncementCell.swift */; };
 		82473FCB1C1F8E6B0061FFFB /* MultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FCA1C1F8E6B0061FFFB /* MultilineLabel.swift */; };
-		82473FCD1C1F91D70061FFFB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473FCC1C1F91D70061FFFB /* APIManager.swift */; };
 		825FC34B1D90F1B400DDB9A5 /* ScanEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825FC34A1D90F1B400DDB9A5 /* ScanEvent.swift */; };
 		825FC34C1D90F1B400DDB9A5 /* ScanEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825FC34A1D90F1B400DDB9A5 /* ScanEvent.swift */; };
 		8286A0201C6072CF00B6EFEE /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8286A01F1C6072CF00B6EFEE /* TextFieldCell.swift */; };
@@ -114,8 +96,6 @@
 		82E2F3E81CD9590300A8F165 /* CoalescedCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E2F3E61CD9590300A8F165 /* CoalescedCallbacks.swift */; };
 		82EFDE8B1C32ED060074AB99 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EFDE8A1C32ED060074AB99 /* EventViewController.swift */; };
 		9D4D0CCC1C65AE5D003DAAF3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D0CCB1C65AE5D003DAAF3 /* SettingsViewController.swift */; };
-		A3EA5A8335E333A6D2D7B8C1 /* Pods_HackRidgeToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411030A013F718280E0C9392 /* Pods_HackRidgeToday.framework */; };
-		E07AC0E0801DE56B0A7BB53E /* Pods_HackRidgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C6A8DC4C82073CEBFE0ECB /* Pods_HackRidgeUITests.framework */; };
 		FE87AA241D8CD7C000C8DB64 /* BuildingMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE87AA231D8CD7C000C8DB64 /* BuildingMapsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,20 +114,6 @@
 			remoteGlobalIDString = 82287A431C66C3D8001A0F38;
 			remoteInfo = MHacksToday;
 		};
-		8243F6801DA35EF400B9D929 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82473F9A1C1F7A170061FFFB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8243F67D1DA35EF400B9D929;
-			remoteInfo = "MHacksWatch Extension";
-		};
-		8243F6901DA35EF400B9D929 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82473F9A1C1F7A170061FFFB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8243F6711DA35EF400B9D929;
-			remoteInfo = MHacksWatch;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,24 +128,12 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8243F6981DA35EF400B9D929 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				8243F67F1DA35EF400B9D929 /* HackRidgeWatch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8243F69A1DA35EF400B9D929 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				8243F6921DA35EF400B9D929 /* HackRidge.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,16 +141,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B6471994822D868FBAC7FAE /* Pods-HackRidgeWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch.release.xcconfig"; sourceTree = "<group>"; };
-		18DC3C0D7544E79788EDD343 /* Pods-HackRidgeWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		0396631BB748235FE66A2AE9 /* Pods_HackRidge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5F8CB4DD393A1BFDB513A5 /* Pods-HackRidge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidge.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge.release.xcconfig"; sourceTree = "<group>"; };
+		14A64D0EE06498515975FC04 /* Pods-HackRidgeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		164584DD6C1ABB60D40CF00E /* Pods-HackRidgeToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday.release.xcconfig"; sourceTree = "<group>"; };
+		19CC2B5CE2681A03AC833F8E /* Pods-HackRidgeWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		1D30B6D663909EB4B583C8D9 /* Pods-HackRidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge.debug.xcconfig"; sourceTree = "<group>"; };
+		1D31DAF7720611E9A1AFF912 /* Pods_HackRidgeToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F3A8386C9713B3B71864A2 /* Pods_HackRidgeWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2780FAD61E7A22D900C2A6FD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		278CEAB51E75CCF400F95833 /* MapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
 		278CEAB71E75CEAC00F95833 /* ImageOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOverlayRenderer.swift; sourceTree = "<group>"; };
 		2796A9721E73798C00B5141E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		2DE9DAC0684C77B74897C916 /* Pods-HackRidgeWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
-		2F3A8A7A0F3D886E8CC98332 /* Pods-HackRidgeToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday.release.xcconfig"; sourceTree = "<group>"; };
-		3AB2A05C2037454067A11CC0 /* Pods_HackRidgeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		411030A013F718280E0C9392 /* Pods_HackRidgeToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460D41DA1D8B8B0A00C28048 /* GradientTintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTintView.swift; sourceTree = "<group>"; };
 		463165371D86023D00371D56 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		463A90721D9769B600C0F6FE /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
@@ -212,9 +168,14 @@
 		46F3AE9E1CD88E06002495B2 /* ScheduleNowLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleNowLabel.xib; sourceTree = "<group>"; };
 		46F3AEA01CD88EEC002495B2 /* ScheduleNowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleNowLabel.swift; sourceTree = "<group>"; };
 		46F716EB1DA23D6B008D473F /* FloorDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloorDescription.xib; sourceTree = "<group>"; };
+		4BC846334F7BC1256BAA884A /* Pods-HackRidgeWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4F05C433203FC6EC00102864 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F0672EC2041589700C07963 /* Pods_HackRidgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HackRidgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0672ED2041589700C07963 /* Pods_HackRidgeWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HackRidgeWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0672EE2041589700C07963 /* Pods_HackRidgeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HackRidgeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0672F420415A3200C07963 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4F26ACA0203FB21A009012DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4FB2B0FC2038A7C900626264 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		62C6A8DC4C82073CEBFE0ECB /* Pods_HackRidgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		67E9FB676BC6707FF6CEAA51 /* Pods_HackRidge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70065A541F54A3220058592C /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		703700EC1E7B192B0054DB5C /* IndoorFloorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorFloorCell.swift; sourceTree = "<group>"; };
 		704991681D9A062600C3E1AC /* ComposeAnnouncementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeAnnouncementTableViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +185,8 @@
 		709AEA371F6B19F000E7089C /* MHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHacksUITests.swift; sourceTree = "<group>"; };
 		709AEA391F6B19F000E7089C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70A87C581D9B023900920E48 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		75765311B753EB8A4E7863F9 /* Pods_HackRidgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77857C94BC4C5B42DE583620 /* Pods-HackRidgeToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday.debug.xcconfig"; sourceTree = "<group>"; };
 		8205251F1D9DADDD00EF535C /* Floor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
 		820B8E651C2472EC007A2E88 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		82287A441C66C3D8001A0F38 /* HackRidge.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HackRidge.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,20 +200,6 @@
 		823994DC1D9273AC00A8D90C /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		823E4D321C615EE400F37D0B /* TextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		8240DE631D9C72EA000DD78C /* ScannedDataField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannedDataField.swift; sourceTree = "<group>"; };
-		8243F6721DA35EF400B9D929 /* HackRidge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackRidge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8243F6751DA35EF400B9D929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		8243F6771DA35EF400B9D929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8243F6791DA35EF400B9D929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8243F67E1DA35EF400B9D929 /* HackRidgeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HackRidgeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8243F6841DA35EF400B9D929 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		8243F6851DA35EF400B9D929 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		8243F6871DA35EF400B9D929 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		8243F6891DA35EF400B9D929 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		8243F68B1DA35EF400B9D929 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		8243F68D1DA35EF400B9D929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8243F68F1DA35EF400B9D929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8243F6B01DA36C7E00B9D929 /* HackRidgeWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackRidgeWatch.entitlements; sourceTree = "<group>"; };
-		8243F6B11DA36C8400B9D929 /* HackRidgeWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HackRidgeWatch Extension.entitlements"; sourceTree = "<group>"; };
 		82473FA21C1F7A170061FFFB /* HackRidge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackRidge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82473FA51C1F7A170061FFFB /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		82473FA71C1F7A170061FFFB /* LoginViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
@@ -264,7 +213,6 @@
 		82473FC61C1F8B0F0061FFFB /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		82473FC81C1F8C5B0061FFFB /* AnnouncementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		82473FCA1C1F8E6B0061FFFB /* MultilineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MultilineLabel.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
-		82473FCC1C1F91D70061FFFB /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		825FC34A1D90F1B400DDB9A5 /* ScanEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanEvent.swift; sourceTree = "<group>"; };
 		8286A01F1C6072CF00B6EFEE /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		8286A0211C6074D100B6EFEE /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
@@ -283,31 +231,21 @@
 		82942BAF1C2A38E30084880C /* ScheduleHourSeparator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleHourSeparator.xib; sourceTree = "<group>"; };
 		82E2F3E61CD9590300A8F165 /* CoalescedCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoalescedCallbacks.swift; sourceTree = "<group>"; };
 		82EFDE8A1C32ED060074AB99 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
-		9799733FE31EB72C9CCE9D4B /* Pods-HackRidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge.debug.xcconfig"; sourceTree = "<group>"; };
 		9D4D0CCB1C65AE5D003DAAF3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
-		A49238E3F0733946FBE83743 /* Pods-HackRidgeWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch.debug.xcconfig"; sourceTree = "<group>"; };
-		A7A9A7D1874569485C38CB2D /* Pods-HackRidge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidge.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge.release.xcconfig"; sourceTree = "<group>"; };
-		BEB2118CA943FB21B484BFDC /* Pods-HackRidgeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CFD0C7AEEA7F7C4609C5090D /* Pods-HackRidgeToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday.debug.xcconfig"; sourceTree = "<group>"; };
-		E45C729914400E14F945E137 /* Pods_HackRidgeWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F199C47912F70037FEE4B346 /* Pods-HackRidgeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB5A2479D553C48438E97CC3 /* Pods-HackRidgeWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch.release.xcconfig"; sourceTree = "<group>"; };
+		D2492719BD73D3B3388CE449 /* Pods_HackRidgeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRidgeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E699D48274881185D17C47 /* Pods-HackRidgeWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F93F5E6DC2AE352B5ADD1759 /* Pods-HackRidgeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRidgeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE87AA231D8CD7C000C8DB64 /* BuildingMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingMapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0300EFD18ECD5C49585E1B96 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37736C700D7A69BDA537C6E0 /* Pods_HackRidgeWatch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		709AEA321F6B19F000E7089C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07AC0E0801DE56B0A7BB53E /* Pods_HackRidgeUITests.framework in Frameworks */,
+				67D1DB1A8B846BC99E9976F6 /* Pods_HackRidgeUITests.framework in Frameworks */,
+				64566AB1DF85C81C126C3B03 /* Pods_HackRidgeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,15 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82287A461C66C3D8001A0F38 /* NotificationCenter.framework in Frameworks */,
-				A3EA5A8335E333A6D2D7B8C1 /* Pods_HackRidgeToday.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8243F67B1DA35EF400B9D929 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D66AFB1DC654BEE002DF9BF /* Pods_HackRidgeWatch_Extension.framework in Frameworks */,
+				381BC50A2F7108B981B2152F /* Pods_HackRidgeToday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,31 +262,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0672EF2041589700C07963 /* Pods_HackRidgeToday.framework in Frameworks */,
 				2780FAD71E7A22D900C2A6FD /* MapKit.framework in Frameworks */,
-				3E20233AD888D5C351C8601B /* Pods_HackRidge.framework in Frameworks */,
+				4CD58B58E1EF5813074EAF0F /* Pods_HackRidge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C373ACE51FC01746389DB04 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9799733FE31EB72C9CCE9D4B /* Pods-HackRidge.debug.xcconfig */,
-				A7A9A7D1874569485C38CB2D /* Pods-HackRidge.release.xcconfig */,
-				CFD0C7AEEA7F7C4609C5090D /* Pods-HackRidgeToday.debug.xcconfig */,
-				2F3A8A7A0F3D886E8CC98332 /* Pods-HackRidgeToday.release.xcconfig */,
-				BEB2118CA943FB21B484BFDC /* Pods-HackRidgeUITests.debug.xcconfig */,
-				F199C47912F70037FEE4B346 /* Pods-HackRidgeUITests.release.xcconfig */,
-				A49238E3F0733946FBE83743 /* Pods-HackRidgeWatch.debug.xcconfig */,
-				0B6471994822D868FBAC7FAE /* Pods-HackRidgeWatch.release.xcconfig */,
-				18DC3C0D7544E79788EDD343 /* Pods-HackRidgeWatch Extension.debug.xcconfig */,
-				2DE9DAC0684C77B74897C916 /* Pods-HackRidgeWatch Extension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		709AEA361F6B19F000E7089C /* HackRidgeUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,13 +283,16 @@
 		820C5BF51C29326900CD9F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F0672EC2041589700C07963 /* Pods_HackRidgeUITests.framework */,
+				4F0672ED2041589700C07963 /* Pods_HackRidgeWatch_Extension.framework */,
+				4F0672EE2041589700C07963 /* Pods_HackRidgeWatch.framework */,
 				2780FAD61E7A22D900C2A6FD /* MapKit.framework */,
 				82287A451C66C3D8001A0F38 /* NotificationCenter.framework */,
-				67E9FB676BC6707FF6CEAA51 /* Pods_HackRidge.framework */,
-				411030A013F718280E0C9392 /* Pods_HackRidgeToday.framework */,
-				62C6A8DC4C82073CEBFE0ECB /* Pods_HackRidgeUITests.framework */,
-				3AB2A05C2037454067A11CC0 /* Pods_HackRidgeWatch.framework */,
-				E45C729914400E14F945E137 /* Pods_HackRidgeWatch_Extension.framework */,
+				0396631BB748235FE66A2AE9 /* Pods_HackRidge.framework */,
+				1D31DAF7720611E9A1AFF912 /* Pods_HackRidgeToday.framework */,
+				75765311B753EB8A4E7863F9 /* Pods_HackRidgeUITests.framework */,
+				D2492719BD73D3B3388CE449 /* Pods_HackRidgeWatch.framework */,
+				25F3A8386C9713B3B71864A2 /* Pods_HackRidgeWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -386,43 +303,10 @@
 				82287A551C66C3EC001A0F38 /* TodayViewController.swift */,
 				82287A591C66C419001A0F38 /* MainInterface.storyboard */,
 				82287A571C66C3FF001A0F38 /* Info.plist */,
+				4F05C433203FC6EC00102864 /* GoogleService-Info.plist */,
 				82287A641C66C61D001A0F38 /* HackRidgeToday.entitlements */,
 			);
 			path = HackRidgeToday;
-			sourceTree = "<group>";
-		};
-		8243F6731DA35EF400B9D929 /* HackRidgeWatch */ = {
-			isa = PBXGroup;
-			children = (
-				8243F6B01DA36C7E00B9D929 /* HackRidgeWatch.entitlements */,
-				8243F6741DA35EF400B9D929 /* Interface.storyboard */,
-				8243F6771DA35EF400B9D929 /* Assets.xcassets */,
-				8243F6791DA35EF400B9D929 /* Info.plist */,
-			);
-			path = HackRidgeWatch;
-			sourceTree = "<group>";
-		};
-		8243F6821DA35EF400B9D929 /* HackRidgeWatch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				8243F6B11DA36C8400B9D929 /* HackRidgeWatch Extension.entitlements */,
-				8243F6851DA35EF400B9D929 /* InterfaceController.swift */,
-				8243F6871DA35EF400B9D929 /* ExtensionDelegate.swift */,
-				8243F6891DA35EF400B9D929 /* NotificationController.swift */,
-				8243F68B1DA35EF400B9D929 /* ComplicationController.swift */,
-				8243F68D1DA35EF400B9D929 /* Assets.xcassets */,
-				8243F68F1DA35EF400B9D929 /* Info.plist */,
-				8243F6831DA35EF400B9D929 /* Supporting Files */,
-			);
-			path = "HackRidgeWatch Extension";
-			sourceTree = "<group>";
-		};
-		8243F6831DA35EF400B9D929 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8243F6841DA35EF400B9D929 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		82473F991C1F7A170061FFFB = {
@@ -430,12 +314,10 @@
 			children = (
 				82473FA41C1F7A170061FFFB /* HackRidge */,
 				82287A471C66C3D8001A0F38 /* HackRidgeToday */,
-				8243F6731DA35EF400B9D929 /* HackRidgeWatch */,
-				8243F6821DA35EF400B9D929 /* HackRidgeWatch Extension */,
 				709AEA361F6B19F000E7089C /* HackRidgeUITests */,
 				820C5BF51C29326900CD9F09 /* Frameworks */,
 				82473FA31C1F7A170061FFFB /* Products */,
-				1C373ACE51FC01746389DB04 /* Pods */,
+				F3337B7992D30DBA3C749783 /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -446,8 +328,6 @@
 			children = (
 				82473FA21C1F7A170061FFFB /* HackRidge.app */,
 				82287A441C66C3D8001A0F38 /* HackRidge.appex */,
-				8243F6721DA35EF400B9D929 /* HackRidge.app */,
-				8243F67E1DA35EF400B9D929 /* HackRidgeWatch Extension.appex */,
 				709AEA351F6B19F000E7089C /* HackRidgeUITests.xctest */,
 			);
 			name = Products;
@@ -488,6 +368,7 @@
 			children = (
 				82287A651C66C633001A0F38 /* HackRidge.entitlements */,
 				82473FB31C1F7A170061FFFB /* Info.plist */,
+				4F26ACA0203FB21A009012DE /* GoogleService-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -547,7 +428,7 @@
 		82473FC11C1F80EF0061FFFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				82473FCC1C1F91D70061FFFB /* APIManager.swift */,
+				4F0672F420415A3200C07963 /* APIManager.swift */,
 				82287A6C1C66D575001A0F38 /* APIManager+UIKit.swift */,
 				82E38A1E1D8133FA007D36DF /* Model Internals */,
 				82E38A1F1D81343A007D36DF /* Public Models */,
@@ -581,6 +462,23 @@
 			name = "Public Models";
 			sourceTree = "<group>";
 		};
+		F3337B7992D30DBA3C749783 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D30B6D663909EB4B583C8D9 /* Pods-HackRidge.debug.xcconfig */,
+				0D5F8CB4DD393A1BFDB513A5 /* Pods-HackRidge.release.xcconfig */,
+				77857C94BC4C5B42DE583620 /* Pods-HackRidgeToday.debug.xcconfig */,
+				164584DD6C1ABB60D40CF00E /* Pods-HackRidgeToday.release.xcconfig */,
+				14A64D0EE06498515975FC04 /* Pods-HackRidgeUITests.debug.xcconfig */,
+				F93F5E6DC2AE352B5ADD1759 /* Pods-HackRidgeUITests.release.xcconfig */,
+				19CC2B5CE2681A03AC833F8E /* Pods-HackRidgeWatch.debug.xcconfig */,
+				CB5A2479D553C48438E97CC3 /* Pods-HackRidgeWatch.release.xcconfig */,
+				F6E699D48274881185D17C47 /* Pods-HackRidgeWatch Extension.debug.xcconfig */,
+				4BC846334F7BC1256BAA884A /* Pods-HackRidgeWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -588,12 +486,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 709AEA3C1F6B19F000E7089C /* Build configuration list for PBXNativeTarget "HackRidgeUITests" */;
 			buildPhases = (
-				21ACEE185A56FE172FDEBDBC /* [CP] Check Pods Manifest.lock */,
+				1FAC339D2ABEA253D494D19D /* [CP] Check Pods Manifest.lock */,
 				709AEA311F6B19F000E7089C /* Sources */,
 				709AEA321F6B19F000E7089C /* Frameworks */,
 				709AEA331F6B19F000E7089C /* Resources */,
-				E9B7DA23D6E819C2207F5C89 /* [CP] Embed Pods Frameworks */,
-				6DD4DC60FBDAB14C1627EA60 /* [CP] Copy Pods Resources */,
+				CFDF91C0839E6CF3C3E9B3B4 /* [CP] Embed Pods Frameworks */,
+				9868A1DE1EC682116A19BB5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -609,11 +507,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82287A531C66C3D8001A0F38 /* Build configuration list for PBXNativeTarget "HackRidgeToday" */;
 			buildPhases = (
-				E3B330B107A2CBC0B6922060 /* [CP] Check Pods Manifest.lock */,
+				53D63F82B7D1D3241209A2C7 /* [CP] Check Pods Manifest.lock */,
 				82287A401C66C3D8001A0F38 /* Sources */,
 				82287A411C66C3D8001A0F38 /* Frameworks */,
 				82287A421C66C3D8001A0F38 /* Resources */,
-				08E9579D0BC9C283B84B98AC /* [CP] Copy Pods Resources */,
+				44CA7D2FFE75B719C65144BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -624,64 +522,23 @@
 			productReference = 82287A441C66C3D8001A0F38 /* HackRidge.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		8243F6711DA35EF400B9D929 /* HackRidgeWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8243F6991DA35EF400B9D929 /* Build configuration list for PBXNativeTarget "HackRidgeWatch" */;
-			buildPhases = (
-				9ACA701373BA73616BEA93F6 /* [CP] Check Pods Manifest.lock */,
-				8243F6701DA35EF400B9D929 /* Resources */,
-				8243F6981DA35EF400B9D929 /* Embed App Extensions */,
-				0300EFD18ECD5C49585E1B96 /* Frameworks */,
-				B09DB67BECE3E5EAC7AFB966 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8243F6811DA35EF400B9D929 /* PBXTargetDependency */,
-			);
-			name = HackRidgeWatch;
-			productName = MHacksWatch;
-			productReference = 8243F6721DA35EF400B9D929 /* HackRidge.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		8243F67D1DA35EF400B9D929 /* HackRidgeWatch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8243F6971DA35EF400B9D929 /* Build configuration list for PBXNativeTarget "HackRidgeWatch Extension" */;
-			buildPhases = (
-				EE11DE54440B7A6E128E8ACE /* [CP] Check Pods Manifest.lock */,
-				8243F67A1DA35EF400B9D929 /* Sources */,
-				8243F67B1DA35EF400B9D929 /* Frameworks */,
-				8243F67C1DA35EF400B9D929 /* Resources */,
-				B4423EB0DF0739D348B95FFA /* [CP] Embed Pods Frameworks */,
-				7830E6A92C1D604C3B297130 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "HackRidgeWatch Extension";
-			productName = "MHacksWatch Extension";
-			productReference = 8243F67E1DA35EF400B9D929 /* HackRidgeWatch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 		82473FA11C1F7A170061FFFB /* HackRidge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82473FB61C1F7A170061FFFB /* Build configuration list for PBXNativeTarget "HackRidge" */;
 			buildPhases = (
-				04D817551E570613AFC2A21D /* [CP] Check Pods Manifest.lock */,
+				7B8E92D4FF71F023DC996262 /* [CP] Check Pods Manifest.lock */,
 				82473F9E1C1F7A170061FFFB /* Sources */,
 				82473F9F1C1F7A170061FFFB /* Frameworks */,
 				82473FA01C1F7A170061FFFB /* Resources */,
 				82287A541C66C3D8001A0F38 /* Embed App Extensions */,
 				8243F69A1DA35EF400B9D929 /* Embed Watch Content */,
-				DFFF994C7AAC3686ABD27035 /* [CP] Embed Pods Frameworks */,
-				C3F0D90D3E70BD3ED4684F7B /* [CP] Copy Pods Resources */,
+				850B12A652F0A983F7D10739 /* [CP] Embed Pods Frameworks */,
+				0BFCE21530535D829A3F5E86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				822896991D9E4B420081A613 /* PBXTargetDependency */,
-				8243F6911DA35EF400B9D929 /* PBXTargetDependency */,
 			);
 			name = HackRidge;
 			productName = MHacks;
@@ -708,26 +565,6 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 9R3LHEXKKB;
 						LastSwiftMigration = 0800;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					8243F6711DA35EF400B9D929 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9R3LHEXKKB;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					8243F67D1DA35EF400B9D929 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9R3LHEXKKB;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -773,8 +610,6 @@
 			targets = (
 				82473FA11C1F7A170061FFFB /* HackRidge */,
 				82287A431C66C3D8001A0F38 /* HackRidgeToday */,
-				8243F6711DA35EF400B9D929 /* HackRidgeWatch */,
-				8243F67D1DA35EF400B9D929 /* HackRidgeWatch Extension */,
 				709AEA341F6B19F000E7089C /* HackRidgeUITests */,
 			);
 		};
@@ -793,23 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82287A5B1C66C419001A0F38 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8243F6701DA35EF400B9D929 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8243F6781DA35EF400B9D929 /* Assets.xcassets in Resources */,
-				8243F6761DA35EF400B9D929 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8243F67C1DA35EF400B9D929 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8243F68E1DA35EF400B9D929 /* Assets.xcassets in Resources */,
+				4F05C434203FC6EC00102864 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +643,7 @@
 				82942BB11C2A38E30084880C /* ScheduleHourSeparator.xib in Resources */,
 				46F716EC1DA23D6B008D473F /* FloorDescription.xib in Resources */,
 				82942BB01C2A38E30084880C /* ScheduleDayHeader.xib in Resources */,
+				4F26ACA1203FB21A009012DE /* GoogleService-Info.plist in Resources */,
 				82473FAD1C1F7A170061FFFB /* Main.storyboard in Resources */,
 				46F3AE9F1CD88E06002495B2 /* ScheduleNowLabel.xib in Resources */,
 			);
@@ -832,25 +652,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04D817551E570613AFC2A21D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HackRidge-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		08E9579D0BC9C283B84B98AC /* [CP] Copy Pods Resources */ = {
+		0BFCE21530535D829A3F5E86 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -862,10 +664,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21ACEE185A56FE172FDEBDBC /* [CP] Check Pods Manifest.lock */ = {
+		1FAC339D2ABEA253D494D19D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -883,7 +685,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DD4DC60FBDAB14C1627EA60 /* [CP] Copy Pods Resources */ = {
+		44CA7D2FFE75B719C65144BF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -895,25 +697,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeToday/Pods-HackRidgeToday-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7830E6A92C1D604C3B297130 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9ACA701373BA73616BEA93F6 /* [CP] Check Pods Manifest.lock */ = {
+		53D63F82B7D1D3241209A2C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -924,62 +711,32 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HackRidgeWatch-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HackRidgeToday-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B09DB67BECE3E5EAC7AFB966 /* [CP] Copy Pods Resources */ = {
+		7B8E92D4FF71F023DC996262 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRidge-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeWatch/Pods-HackRidgeWatch-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B4423EB0DF0739D348B95FFA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeWatch Extension/Pods-HackRidgeWatch Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3F0D90D3E70BD3ED4684F7B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DFFF994C7AAC3686ABD27035 /* [CP] Embed Pods Frameworks */ = {
+		850B12A652F0A983F7D10739 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1003,25 +760,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidge/Pods-HackRidge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3B330B107A2CBC0B6922060 /* [CP] Check Pods Manifest.lock */ = {
+		9868A1DE1EC682116A19BB5B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HackRidgeToday-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E9B7DA23D6E819C2207F5C89 /* [CP] Embed Pods Frameworks */ = {
+		CFDF91C0839E6CF3C3E9B3B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1034,24 +788,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackRidgeUITests/Pods-HackRidgeUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE11DE54440B7A6E128E8ACE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HackRidgeWatch Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1070,7 +806,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				82287A561C66C3EC001A0F38 /* TodayViewController.swift in Sources */,
-				82287A6F1C66D806001A0F38 /* APIManager.swift in Sources */,
 				82287A5C1C66C570001A0F38 /* Extensions.swift in Sources */,
 				82E1888F1D7E7D5400608D40 /* Serializable.swift in Sources */,
 				82E1888C1D7E4E8800608D40 /* MHacksArray.swift in Sources */,
@@ -1082,32 +817,9 @@
 				82287A601C66C570001A0F38 /* Location.swift in Sources */,
 				82287A611C66C570001A0F38 /* Event.swift in Sources */,
 				825FC34C1D90F1B400DDB9A5 /* ScanEvent.swift in Sources */,
+				4F0672FE20416FF500C07963 /* APIManager.swift in Sources */,
 				820525221D9DADE900EF535C /* ScannedDataField.swift in Sources */,
 				82287A631C66C59A001A0F38 /* AnnouncementCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8243F67A1DA35EF400B9D929 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8243F69F1DA365A900B9D929 /* KeychainWrapper.swift in Sources */,
-				8243F69C1DA365A900B9D929 /* Serializable.swift in Sources */,
-				8243F6AD1DA365B300B9D929 /* ScanEvent.swift in Sources */,
-				8243F68A1DA35EF400B9D929 /* NotificationController.swift in Sources */,
-				8243F68C1DA35EF400B9D929 /* ComplicationController.swift in Sources */,
-				8243F6A91DA365B300B9D929 /* Announcement.swift in Sources */,
-				8243F69D1DA365A900B9D929 /* MHacksArray.swift in Sources */,
-				8243F69B1DA3648C00B9D929 /* APIManager.swift in Sources */,
-				8243F6881DA35EF400B9D929 /* ExtensionDelegate.swift in Sources */,
-				8243F69E1DA365A900B9D929 /* CoalescedCallbacks.swift in Sources */,
-				8243F6861DA35EF400B9D929 /* InterfaceController.swift in Sources */,
-				8243F6AE1DA365B300B9D929 /* ScannedDataField.swift in Sources */,
-				70065A571F54A5A80058592C /* Configuration.swift in Sources */,
-				8243F6AC1DA365B300B9D929 /* Floor.swift in Sources */,
-				8243F6AA1DA365B300B9D929 /* Location.swift in Sources */,
-				8243F6AF1DA369A600B9D929 /* Extensions.swift in Sources */,
-				8243F6AB1DA365B300B9D929 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,7 +849,6 @@
 				703700ED1E7B192B0054DB5C /* IndoorFloorCell.swift in Sources */,
 				82473FA61C1F7A170061FFFB /* AppDelegate.swift in Sources */,
 				70065A551F54A3220058592C /* Configuration.swift in Sources */,
-				82473FCD1C1F91D70061FFFB /* APIManager.swift in Sources */,
 				82473FC71C1F8B0F0061FFFB /* Announcement.swift in Sources */,
 				82942BAD1C2A37670084880C /* Geometry.swift in Sources */,
 				82EFDE8B1C32ED060074AB99 /* EventViewController.swift in Sources */,
@@ -1146,6 +857,7 @@
 				8240DE641D9C72EA000DD78C /* ScannedDataField.swift in Sources */,
 				82942B9D1C2A2EA00084880C /* EventOrganizer.swift in Sources */,
 				82942B9F1C2A2EAE0084880C /* Event.swift in Sources */,
+				4F0672F520415A3300C07963 /* APIManager.swift in Sources */,
 				82942BAB1C2A37000084880C /* ScheduleEventCell.swift in Sources */,
 				82473FCB1C1F8E6B0061FFFB /* MultilineLabel.swift in Sources */,
 				46451B751DA24B6F0025478A /* FloorDescriptionView.swift in Sources */,
@@ -1185,16 +897,6 @@
 			target = 82287A431C66C3D8001A0F38 /* HackRidgeToday */;
 			targetProxy = 822896981D9E4B420081A613 /* PBXContainerItemProxy */;
 		};
-		8243F6811DA35EF400B9D929 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8243F67D1DA35EF400B9D929 /* HackRidgeWatch Extension */;
-			targetProxy = 8243F6801DA35EF400B9D929 /* PBXContainerItemProxy */;
-		};
-		8243F6911DA35EF400B9D929 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8243F6711DA35EF400B9D929 /* HackRidgeWatch */;
-			targetProxy = 8243F6901DA35EF400B9D929 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1204,14 +906,6 @@
 				82287A5A1C66C419001A0F38 /* Base */,
 			);
 			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-		8243F6741DA35EF400B9D929 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8243F6751DA35EF400B9D929 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		82473FAB1C1F7A170061FFFB /* Main.storyboard */ = {
@@ -1227,7 +921,7 @@
 /* Begin XCBuildConfiguration section */
 		709AEA3D1F6B19F000E7089C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEB2118CA943FB21B484BFDC /* Pods-HackRidgeUITests.debug.xcconfig */;
+			baseConfigurationReference = 14A64D0EE06498515975FC04 /* Pods-HackRidgeUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1246,7 +940,7 @@
 		};
 		709AEA3E1F6B19F000E7089C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F199C47912F70037FEE4B346 /* Pods-HackRidgeUITests.release.xcconfig */;
+			baseConfigurationReference = F93F5E6DC2AE352B5ADD1759 /* Pods-HackRidgeUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1264,7 +958,7 @@
 		};
 		82287A511C66C3D8001A0F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFD0C7AEEA7F7C4609C5090D /* Pods-HackRidgeToday.debug.xcconfig */;
+			baseConfigurationReference = 77857C94BC4C5B42DE583620 /* Pods-HackRidgeToday.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HackRidgeToday/HackRidgeToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1285,7 +979,7 @@
 		};
 		82287A521C66C3D8001A0F38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F3A8A7A0F3D886E8CC98332 /* Pods-HackRidgeToday.release.xcconfig */;
+			baseConfigurationReference = 164584DD6C1ABB60D40CF00E /* Pods-HackRidgeToday.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HackRidgeToday/HackRidgeToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1301,102 +995,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		8243F6931DA35EF400B9D929 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A49238E3F0733946FBE83743 /* Pods-HackRidgeWatch.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = HackRidgeWatch/HackRidgeWatch.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9R3LHEXKKB;
-				IBSC_MODULE = HackRidgeWatch_Extension;
-				INFOPLIST_FILE = "$(SRCROOT)/HackRidgeWatch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CarolineZiminski.HackRidge.watchkitapp;
-				PRODUCT_NAME = HackRidge;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		8243F6941DA35EF400B9D929 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B6471994822D868FBAC7FAE /* Pods-HackRidgeWatch.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = HackRidgeWatch/HackRidgeWatch.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9R3LHEXKKB;
-				IBSC_MODULE = HackRidgeWatch_Extension;
-				INFOPLIST_FILE = "$(SRCROOT)/HackRidgeWatch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CarolineZiminski.HackRidge.watchkitapp;
-				PRODUCT_NAME = HackRidge;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		8243F6951DA35EF400B9D929 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18DC3C0D7544E79788EDD343 /* Pods-HackRidgeWatch Extension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = "HackRidgeWatch Extension/HackRidgeWatch Extension.entitlements";
-				DEVELOPMENT_TEAM = 9R3LHEXKKB;
-				INFOPLIST_FILE = "$(SRCROOT)/HackRidgeWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CarolineZiminski.HackRidge.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		8243F6961DA35EF400B9D929 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DE9DAC0684C77B74897C916 /* Pods-HackRidgeWatch Extension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = "HackRidgeWatch Extension/HackRidgeWatch Extension.entitlements";
-				DEVELOPMENT_TEAM = 9R3LHEXKKB;
-				INFOPLIST_FILE = "$(SRCROOT)/HackRidgeWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CarolineZiminski.HackRidge.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -1504,7 +1102,7 @@
 		};
 		82473FB71C1F7A170061FFFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9799733FE31EB72C9CCE9D4B /* Pods-HackRidge.debug.xcconfig */;
+			baseConfigurationReference = 1D30B6D663909EB4B583C8D9 /* Pods-HackRidge.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1533,7 +1131,7 @@
 		};
 		82473FB81C1F7A170061FFFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7A9A7D1874569485C38CB2D /* Pods-HackRidge.release.xcconfig */;
+			baseConfigurationReference = 0D5F8CB4DD393A1BFDB513A5 /* Pods-HackRidge.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1576,24 +1174,6 @@
 			buildConfigurations = (
 				82287A511C66C3D8001A0F38 /* Debug */,
 				82287A521C66C3D8001A0F38 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8243F6971DA35EF400B9D929 /* Build configuration list for PBXNativeTarget "HackRidgeWatch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8243F6951DA35EF400B9D929 /* Debug */,
-				8243F6961DA35EF400B9D929 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8243F6991DA35EF400B9D929 /* Build configuration list for PBXNativeTarget "HackRidgeWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8243F6931DA35EF400B9D929 /* Debug */,
-				8243F6941DA35EF400B9D929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -46,6 +46,7 @@ final class Configuration : Serializable, Equatable {
     }
     
     func updateWith(_ serialized: SerializedRepresentation) -> Bool {
+        print(serialized)
         guard let config = serialized["configuration"] as? [String: Any] else {
             return false
         }
@@ -55,9 +56,9 @@ final class Configuration : Serializable, Equatable {
         else {
             return false
         }
-        
-        self.startDate = Date(timeIntervalSince1970: startDate / 1000)
-        self.endDate = Date(timeIntervalSince1970: endDate / 1000)
+        print(Date(timeIntervalSinceReferenceDate: startDate / 1000), Date(timeIntervalSinceReferenceDate: endDate / 1000))
+        self.startDate = Date(timeIntervalSinceReferenceDate: startDate / 1000)
+        self.endDate = Date(timeIntervalSinceReferenceDate: endDate / 1000)
         
         if let updatedAtTimestamp = config[Configuration.lastUpdatedKey] as? Int {
             self.lastUpdated = updatedAtTimestamp

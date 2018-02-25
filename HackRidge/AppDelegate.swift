@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
@@ -50,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
 	}
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		
+		FirebaseApp.configure()
 		
 		application.registerForRemoteNotifications()
 		let settings = UIUserNotificationSettings(types: [.sound, .alert], categories: nil)
